@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Task_11</string>
+
+
+    <string name="text_shakti">SHAKTIJAL</string>
+    <string name="text_end">Endocrine/ Hormonal Disorders</string>
+    <string name="text_gen">Genral Disorders</string>
+    <string name="text_skin">Skin, Hair, Nails</string>
+    <string name="text_infe">Infectious System</string>
+    <string name="text_res">Respiratory System</string>
+    <string name="text_expanded">Expanded</string>
+    <string name="text_collapsed">Collapsed</string>
+
+    <string-array name="text_shakti">
+        <item>Thyroid Disorder</item>
+        <item>Diabetes</item>
+    </string-array>
+
+    <string-array name="text_end">
+        <item>Thyroid Disorder</item>
+        <item>Diabetes</item>
+    </string-array>
+
+    <string-array name="text_gen">
+        <item>Low Immunity</item>
+        <item>Preventive Diseases</item>
+        <item>Obesity</item>
+        <item>Chillblains</item>
+        <item>Heart Stroke</item>
+    </string-array>
+
+    <string-array name="text_skin">
+        <item>Rashes</item>
+        <item>Vitiligo</item>
+        <item>Dryskin</item>
+
+    </string-array>
+
+    <string-array name="text_infe">
+        <item>Low Immunity</item>
+        <item>Preventive Diseases</item>
+        <item>Obesity</item>
+        <item>Chillblains</item>
+        <item>Heart Stroke</item>
+    </string-array>
+
+    <string-array name="text_res">
+        <item>Low Immunity</item>
+        <item>Preventive Diseases</item>
+        <item>Obesity</item>
+        <item>Chillblains</item>
+        <item>Heart Stroke</item>
+    </string-array>
+
+</resources>
