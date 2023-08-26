@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements QuantityKistener 
     private List<String> listDataGroup;
     private HashMap<String, List<String>> listDataChild;
     private ArrayList<String> arrayList;
+    private ArrayList<String> remaingData = new ArrayList<>();
     private ArrayAdapter<String> adapter;
 //    private ListView list;
     RecyclerView recyclerView;
@@ -155,14 +156,28 @@ public class MainActivity extends AppCompatActivity implements QuantityKistener 
         Toast.makeText(getApplicationContext(),arrayList.toString(),Toast.LENGTH_SHORT).show();
 
 
+           remaingData =arrayList;
 
-        // Set Horizontal Layout Manager
-        // for Recycler view
         HorizontalLayout = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(HorizontalLayout);
-        adapterr = new TagAdapter(arrayList);
+        adapterr = new TagAdapter(remaingData,this);
 
         // Set adapter on recycler view
         recyclerView.setAdapter(adapterr);
     }
+
+    @Override
+    public void onDeleteData(String data) {
+         if(remaingData.contains(data)) {
+
+             remaingData.remove(data);
+             HorizontalLayout = new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
+             recyclerView.setLayoutManager(HorizontalLayout);
+             adapterr = new TagAdapter(remaingData, this);
+
+             recyclerView.setAdapter(adapterr);
+         }
+
+    }
+
 }
